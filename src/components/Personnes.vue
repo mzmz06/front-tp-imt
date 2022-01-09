@@ -20,7 +20,7 @@
     <input type="text" class="table table-secondary" id="city" v-model="currentPersonne.city"/>
 
 
-  <router-link :to="'/personnes/' + currentPersonne.id" class="badge badge-warning">Modifier</router-link>
+    <router-link :to="'/personnes/' + currentPersonne.id" class="badge badge-warning">Modifier</router-link>
 
   </div>
   <div v-else>

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <nav class="navbar navbar-expand navbar-dark bg-dark">
-      <router-link to="/personnes" class="navbar-brand">Front SpringBoot App</router-link>
+      <router-link to="/personnes" class="navbar-brand">Annuaire d'Alpha</router-link>
       <div class="navbar-nav mr-auto">
         <li class="nav-item">
           <router-link to="/personnes" class="nav-link">Personnes</router-link>

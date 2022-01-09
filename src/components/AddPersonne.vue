@@ -4,13 +4,13 @@
     <div v-if="!submitted">
       Ajoute tes coordonnées
 
-      <input type="text" class="table table-secondary" id="id" required v-model="personne.id" name="id" disabled />
-      <input type="text" class="table table-secondary" id="name" required v-model="personne.name" name="name"/>
-      <input type="text" class="table table-secondary" id="surname" required v-model="personne.surname" name="surname"/>
-      <input type="text" class="table table-secondary" id="phone" required v-model="personne.phone" name="phone"/>
-      <input type="text" class="table table-secondary" id="city" required v-model="personne.city" name="city"/>
+      <input type="text" placeholder="id" class="table table-secondary" id="id" required v-model="personne.id" name="id" disabled />
+      <input type="text" placeholder="name" class="table table-secondary" id="name" required v-model="personne.name" name="name"/>
+      <input type="text" placeholder="surname" class="table table-secondary" id="surname" required v-model="personne.surname" name="surname"/>
+      <input type="text" placeholder="phone" class="table table-secondary" id="phone" required v-model="personne.phone" name="phone"/>
+      <input type="text" placeholder="city" class="table table-secondary" id="city" required v-model="personne.city" name="city"/>
 
-      <button @click="creerPersonne" class="mt-3 btn btn-success">Ajouter</button>
+      <button @click="creerPersonne" class="mt-3 btn btn-primary">Ajouter</button>
       
     </div>
 
@@ -31,10 +31,10 @@
       return {
         personne: {
           id: null,
-          name: "name",
-          surname: "surname",
-          phone: "phone",
-          city: "city"
+          name: "",
+          surname: "",
+          phone: "",
+          city: ""
         },
         submitted: false
       };
